@@ -1,61 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="border border-secondary">
+    <div class="container">
+      <div class="text-center position-relative py-7 py-md-10">
+        <h1 class="d-inline-block fs-7 fs-md-3 lh-base fw-normal text-primary my-0">EXHIBINECTION</h1>
+        <ul class="d-flex text-secondary list-unstyled position-absolute top-50 end-0 translate-middle-y my-0">
+          <li>
+            <a class="d-none d-md-block py-10 px-6" href="#">Sign in</a>
+          </li>
+          <li>
+            <a class="d-none d-md-block py-10 px-6" href="#">Sign up</a>
+          </li>
+          <li>
+            <a class="d-block position-relative py-10 px-6" href="#">
+              <span class="material-icons">confirmation_number</span>
+              <span
+                class="numberIcon text-white align-top position-absolute translate-middle bg-pink rounded-circle">3</span>
+            </a>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+
+  </header>
+
+  <!-- banner -->
+  <div class="banner position-relative d-none d-md-block">
+    <div class="container">
+      <div class="bannerInfo list-unstyled text-white position-absolute top-50 translate-middle-y">
+        <h2 class="fs-5 fw-bold">台北當代藝術展</h2>
+        <p class="fs-2 fw-bold">01 JUN - 31 OCT</p>
+        <div>
+          <button class="btn btn-pink py-3 px-12 me-2">購買票券</button>
+          <button class="btn btn-outline-light py-3 px-12">詳細資訊</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- topNavBar -->
+  <nav class="border border-secondary py-5">
+    <div class="container ">
+      <ul class="topNavBar d-flex list-unstyled justify-content-center align-items-center m-0">
+        <li><a class="link-secondary px-4" href="#">音樂</a></li>
+        <li><a class="link-secondary px-4" href="#">戲劇</a></li>
+        <li><a class="link-secondary px-4" href="#">設計</a></li>
+        <li><a class="link-secondary px-4" href="#">藝術</a></li>
+        <li><a class="link-secondary px-4" href="#">美食</a></li>
+        <li><a class="link-secondary px-4" href="#">旅遊</a></li>
+        <li><a class="link-secondary px-4" href="#">電影</a></li>
+        <li><a class="link-secondary px-4" href="#">親子</a></li>
+        <li><a class="link-secondary px-4" href="#">期間限定</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <%- contents %>
+
+    <footer class="footer position-relative">
+      <div class="container">
+        <div class="footerInfo text-white position-absolute bottom-0 mb-11">
+          <h2 class="fs-3 fs-md-5 fw-blod mb-15 mb-md-4">想收到展覽的最新消息嗎？<br>快訂閱我們！</h2>
+          <form class="d-inline-block rounded">
+            <input class="border-0 rounded-start p-4" type="email" placeholder="輸入您的電子信箱">
+            <a class="btn-pink border border-pink rounded-end py-5 px-13" href="#">訂閱</a>
           </form>
         </div>
       </div>
-    </nav>
-
-    <%- contents %>
-
-    <footer class="footer">
-      footer
     </footer>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-6 py-md-10">
+          <div class="d-flex flex-column  flex-md-row align-items-md-center">
+            <p class="fs-7 fs-md-3 text-primary pe-6 m-0">EXHIBINECTION</p>
+            <p class="align-middle m-0">© 2020. All Rights Reserved.</p>  
+          </div>
+          <ul class="d-none d-md-flex list-unstyled text-secondary m-0">
+            <li class="me-9">
+              <a href="#">Sign in</a>
+            </li>
+            <li>
+              <a href="#">Sign up</a>
+          </ul>
+        </div>
+      </div>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+</body>
 
 </html>

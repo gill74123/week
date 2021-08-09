@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+@import "./utilities/base";
+@import "./utilities/font";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/index";

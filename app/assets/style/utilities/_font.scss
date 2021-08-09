@@ -1,0 +1,33 @@
+@include media-breakpoint-down(lg){
+    .fs-lg-3{
+        font-size: 1.25rem !important;//992px
+    }
+    
+}
+
+// 小於等於767.98px會觸發
+@include media-breakpoint-up(md){
+    .fs-md-1{
+        font-size: 1rem !important; // 16px
+    }
+    .fs-md-2{
+        font-size: 1.25rem !important; // 20px
+    }
+    .fs-md-3{
+        font-size: 1.5rem !important; // 24px
+    }
+    .fs-md-4{
+        font-size: 1.75rem !important; // 28px
+    }
+    .fs-md-5{
+        font-size: 2rem !important; // 32px
+    }
+    .fs-md-6{
+        font-size: 2.5rem !important; // 40px
+    }
+    .fs-md-7{
+        font-size: 1.375rem !important; // 22px
+    }
+    
+}
+
