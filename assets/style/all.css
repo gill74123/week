@@ -15574,13 +15574,15 @@ img {
   margin-left: 95px;
 }
 
-.topNavBar {
+.nav-scroller {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
 }
 
-.topNavBar::-webkit-scrollbar {
+.nav-scroller::-webkit-scrollbar {
   display: none;
 }
 
