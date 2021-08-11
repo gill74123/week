@@ -16061,13 +16061,6 @@ img {
   padding-bottom: 44px;
 }
 
-@media (min-width: 768px) {
-  .designInfo {
-    padding-top: 80px;
-    padding-bottom: 52px;
-  }
-}
-
 .date {
   width: 50%;
 }
