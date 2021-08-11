@@ -1,10 +1,5 @@
-@include media-breakpoint-down(lg){
-    .fs-lg-3{
-        font-size: 1.25rem !important;//992px
-    }
-    
-}
 
+// font size
 // 小於等於767.98px會觸發
 @include media-breakpoint-up(md){
     .fs-md-1{
@@ -28,6 +23,13 @@
     .fs-md-7{
         font-size: 1.375rem !important; // 22px
     }
-    
+    .fs-md-8{
+        font-size: 2.25rem !important; // 36px
+    }
+}
+
+// font weight
+.fw-medium{
+    font-weight: 500;
 }
 

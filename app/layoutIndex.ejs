@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+
+  <!-- Material Icons & font-awesome -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <!-- all.css -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+
+<body>
+  <!-- header -->
+  <%- include('layoutHeader.ejs') %>
+
+  <!-- banner -->
+  <%- include('layoutBanner.ejs') %>
+
+  <!-- topNavBar -->
+  <%- include('layouttopNavBar.ejs') %>
+
+
+  <!-- contents -->
+  <%- contents %>
+
+
+  <!-- footer -->
+  <%- include('layoutFooter.ejs') %>
+
+
+  <!-- JS -->
+  <script src="./assets/js/vendors.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/all.js"></script>
+
+</body>

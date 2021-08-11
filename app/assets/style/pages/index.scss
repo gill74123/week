@@ -1,5 +1,34 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+// exhibition
+.card{
+  word-wrap: normal;
+  background-color: inherit;
+  &-pic{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
+  &-date{
+    width: 39px;
+  }
+  &-icon{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// liveStreaming
+.liveStreaming{
+  height: 482px;
+  background-image: url(https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fc3890805-73ba-4b83-8d87-2236d201962c%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAJ4ATIV7TEVKIW3RQ%252F20210810%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20210810T163831Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Db41bc21dcc15bc3a716075fcfab54afe6d049063bc6e9ed934baa9a1dbeca225&sign=iozrQlmtqCl2LTNS_ANsHIbLV5y2lqJDOKQ62Oox9fQ);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &-photo{
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+  }
+  .card-body-height{
+    height: 482px;
+  }
 }

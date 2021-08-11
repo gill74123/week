@@ -1,0 +1,20 @@
+// topNavBar
+.nav-scroller{
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y:hidden;
+    white-space: nowrap;
+    &::-webkit-scrollbar{ // 隱藏下方卷軸
+        display: none;
+    }
+    @include media-breakpoint-down(md){
+        justify-content: flex-start;
+    }
+}
+.link-secondary{
+    border-bottom: 1px solid transparent;
+    &:hover{
+        border-bottom: 1px solid #E31277;
+    }
+}
