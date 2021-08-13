@@ -1,0 +1,226 @@
+---
+title: Checkout-3
+layout: ./app/layoutCheckout.ejs
+engine: ejs
+current: Checkout-3
+---
+
+<div class="container">
+     <!-- timeline-section -->
+     <div class="row">
+        <div class="col-lg-8">
+            <div class="row timeline-section">
+                <div class="col-3">
+                    <div class="timeline-pointer active">
+                        <p class="fs-9 fs-lg-1 fw-light mt-2">確認訂單</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="timeline-pointer active">
+                        <p class="fs-9 fs-lg-1 fw-medium mt-2">填寫訂購資訊</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="timeline-pointer active">
+                        <p class="fs-9 fs-lg-1 fw-light mt-2">填寫付款資訊</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="timeline-pointer">
+                        <p class="fs-9 fs-lg-1 fw-light mt-2">完成訂購</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- checkoutList -->
+    <div class="row">
+        <!-- mobile版出現-付款資訊 -->
+        <div class="col-md-4 d-md-none mb-12">
+            <h2 class="fs-2 fw-medium mb-6 mb-md-8">付款資訊</h2>
+            <form action="" class="mb-10">
+                <div class="mb-8">
+                    <label for="email" class="mb-1">Email</label><br>
+                    <input class="border border-secondary rounded-2 py-2 px-4 w-100" type="email" id="email" name="email" placeholder="example@gmail.com">
+                </div>
+                <div class="mb-8">
+                    <label for="person">姓名</label><br>
+                    <input class="border border-secondary rounded-2 py-2 px-4 w-100" type="text" id="person" name="person" placeholder="請輸入姓名">
+                </div>
+                <div class="mb-8">
+                    <label for="tel">聯絡電話</label><br>
+                    <input class="border border-secondary rounded-2 py-2 px-4 w-100" type="tel" id="tel" name="tel" placeholder="請輸入電話">
+                </div>
+                <div>
+                    <label for="coupon">優惠碼</label><br>
+                    <input class="border border-secondary rounded-2 py-2 px-4 mb-1 w-100" type="text" id="coupon" name="coupon" placeholder="TG87526">
+                    <p class="fs-9 text-primary text-end">優惠碼已生效</p>
+                </div>
+            </form>
+
+            <div class="d-flex justify-content-between mb-2">
+                <p class="fs-2 fw-medium">小計</p>
+                <p class="fs-2 fw-light">NT$1050</p>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <p class="fs-2 fw-medium">折扣</p>
+                <p class="fs-2 fw-light">-NT$50</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p class="fs-2 fw-medium">總金額</p>
+                <p class="fs-2 fw-medium">NT$1000</p>
+            </div>
+        </div>
+
+        <!-- 產品資訊 -->
+        <div class="col-md-7 col-lg-8 mb-12 mb-md-0">
+            <ul>
+                <li class="row mb-8">
+                    <div class="col-6 col-lg-3">
+                        <img class="checkoutListImg"
+                            src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                            alt="prod-1">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">2020 台味設計展</p>
+                                <span class="material-icons d-lg-none">close</span>
+                            </div>
+                            <p class="fw-medium">01 JUN — 31 OCT</p>
+                            <div class="d-flex align-items-center">
+                                <p class="text-secondary">全票</p>
+                                <div class="d-lg-none d-flex fs-2 fw-bold justify-content-between align-items-center">
+                                    <p class="ms-2 me-11">1</p>
+                                    <p>NT$350</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6">
+                        <div class="d-flex justify-content-between align-items-center h-100">
+                            <p class="fs-2 fw-bold">NT$350</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="text-black fs-2 fw-bold">–</a>
+                                <p class="fs-2 fw-bold px-0 p-md-2 ">01</p>
+                                <a href="#" class="text-black fs-2 fw-bold">+</a>
+                            </div>
+                            <span class="material-icons">close</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="row mb-8">
+                    <div class="col-6 col-lg-3">
+                        <img class="checkoutListImg"
+                            src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
+                            alt="prod-2">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">No.22 線上設計展</p>
+                                <span class="material-icons d-lg-none">close</span>
+                            </div>
+                            <p class="fw-medium">01 JUN — 31 OCT</p>
+                            <div class="d-flex align-items-center">
+                                <p class="text-secondary">全票</p>
+                                <div class="d-lg-none d-flex fs-2 fw-bold justify-content-between align-items-center">
+                                    <p class="ms-2 me-11">1</p>
+                                    <p>NT$350</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6">
+                        <div class="d-flex justify-content-between align-items-center h-100">
+                            <p class="fs-2 fw-bold">NT$350</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="text-black fs-2 fw-bold">–</a>
+                                <p class="fs-2 fw-bold px-0 p-md-2 ">01</p>
+                                <a href="#" class="text-black fs-2 fw-bold">+</a>
+                            </div>
+                            <span class="material-icons">close</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="row">
+                    <div class="col-6 col-lg-3">
+                        <img class="checkoutListImg"
+                            src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                            alt="prod-3">
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="d-flex justify-content-between">
+                                <p class="fw-bold">No.22 線上設計展</p>
+                                <span class="material-icons d-lg-none">close</span>
+                            </div>
+                            <p class="fw-medium">01 JUN — 31 OCT</p>
+                            <div class="d-flex align-items-center">
+                                <p class="text-secondary">全票</p>
+                                <div class="d-lg-none d-flex fs-2 fw-bold justify-content-between align-items-center">
+                                    <p class="ms-2 me-11">1</p>
+                                    <p>NT$350</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6">
+                        <div class="d-flex justify-content-between align-items-center h-100">
+                            <p class="fs-2 fw-bold">NT$350</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="text-black fs-2 fw-bold">–</a>
+                                <p class="fs-2 fw-bold px-0 p-md-2 ">01</p>
+                                <a href="#" class="text-black fs-2 fw-bold">+</a>
+                            </div>
+                            <span class="material-icons">close</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- pad版出現-付款資訊 -->
+        <div class="col-md-5 col-lg-4 d-none d-md-block">
+            <h2 class="fs-2 fw-medium mb-6 mb-md-8">付款資訊</h2>
+            <form action="" class="mb-14">
+                <div class="mb-8">
+                    <label for="creditCard" class="mb-1">信用卡帳號</label><br>
+                    <input class="border border-secondary rounded-2 py-2 px-4 w-100" type="text" id="creditCard" name="creditCard" placeholder="Xxxx-xxxx-xxxx-xxxx">
+                </div>
+                <div class="mb-8">
+                    <label for="date">有效日期</label><br>
+                    <input class="border border-secondary rounded-2 py-2 px-4 w-100" type="text" id="date" name="date" placeholder="(MM/YY)">
+                </div>
+                <div class="mb-8">
+                    <label for="pwd">安全碼</label><br>
+                    <input class="border border-secondary rounded-2 py-2 px-4 w-100" type="password" id="pwd" name="pwd" placeholder="***">
+                </div>
+            </form>
+
+            <div class="d-flex justify-content-between mb-2">
+                <p class="fs-2 fw-medium">小計</p>
+                <p class="fs-2 fw-light">NT$1050</p>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <p class="fs-2 fw-medium">折扣</p>
+                <p class="fs-2 fw-light">-NT$50</p>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+                <p class="fs-2 fw-medium">總金額</p>
+                <p class="fs-2 fw-medium">NT$1000</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- checkoutButton -->
+    <div class="row">
+        <div class="col-6 col-md-2">
+            <a href="checkout-2.html" class="btn btn-outline-primary w-100 py-3">返回</a>
+        </div>
+        <div class="col-6 offset-md-5 col-md-5 offset-lg-6 col-lg-4">
+            <a href="checkout-4.html" class="btn btn-pink w-100 py-3">下一步</a>
+        </div>
+    </div>
+</div>

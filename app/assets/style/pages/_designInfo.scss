@@ -1,16 +1,14 @@
 // designTicketBox
-.card-img-top{
-    height: 256px;
-    background-image: url(https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 .designTicketBox{
     padding-top: 44px;
     padding-bottom: 40px;
     @include media-breakpoint-up(md){
         padding-top: 80px;
+    }
+    &-img{
+        @include bg-img(100%, 256px, center){
+            background-image: url(https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+        }
     }
 }
 .ticketType{
@@ -27,12 +25,10 @@
 
 // designDetail
 .designDetailBanner{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+    @include img-cover(100%, 400px)
 }
 .designDetailImg{
-    height: 559px;
+    @include img-cover(100%, 559px)
 }
 .text-indent{
     text-indent: 2rem;

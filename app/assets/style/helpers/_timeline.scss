@@ -1,0 +1,39 @@
+// timeline-section
+.timeline-section{
+    position: relative;
+    margin: 20px 0;
+}
+.timeline-section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #E31277;
+}
+.timeline-pointer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.timeline-pointer.active::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E31277;
+}
+.timeline-pointer::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-25%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid #E31277;
+}

@@ -1,0 +1,15 @@
+@mixin img-cover($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    @content
+}
+
+@mixin bg-img($width, $height, $position) {
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: $position;
+    @content
+}

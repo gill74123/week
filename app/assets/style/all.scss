@@ -1,17 +1,32 @@
+// 字體
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap');
 
+// BS5、客製variables
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+// mixin
+@import "./mixin/images.scss";
 
+// utilities
 @import "./utilities/base";
 @import "./utilities/font";
+
+// helpers
+@import "./helpers/cartlist";
 @import "./helpers/swiper";
+@import "./helpers/timeline";
+@import "./helpers/card";
+
+// layout
 @import "./layout/header";
 @import "./layout/banner";
 @import "./layout/topNavBar";
 @import "./layout/footer";
+
+// pages
 @import "./pages/index";
 @import "./pages/design";
 @import "./pages/designInfo";
+@import "./pages/checkout";

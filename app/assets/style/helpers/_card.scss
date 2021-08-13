@@ -1,0 +1,15 @@
+// exhibition有用到
+.card{
+    word-wrap: normal;
+    background-color: inherit;
+    &-pic{
+        @include img-cover(350px, 350px)
+    }
+    &-date{
+      width: 50%;
+    }
+    &-icon{
+      width: 20px;
+      height: 20px;
+    }
+}
