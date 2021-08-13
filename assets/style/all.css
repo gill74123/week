@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap");
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
@@ -16372,13 +16373,13 @@ fieldset:disabled .btn {
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+/*
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; // 防止圖片因伸縮變形
 }
-
+*/
 h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .h6 {
   margin: 0;
   line-height: 1.5;
@@ -16424,45 +16425,6 @@ p, ol, ul, dl {
   font-weight: 500;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  margin-right: 0;
-}
-
-@media (min-width: 992px) {
-  .swiper-container {
-    width: 92%;
-  }
-}
-
-@media (min-width: 768px) {
-  .swiper-slide {
-    width: 100%;
-  }
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media (min-width: 768px) {
-  .swiper-slide img {
-    height: 350px;
-  }
-}
-
-.numberIcon {
-  width: 20px;
-  height: 20px;
-  top: 35%;
-  left: 65%;
-}
-
 .modal.rightActive .modal-dialog {
   position: fixed;
   top: 69px;
@@ -16499,166 +16461,30 @@ p, ol, ul, dl {
      object-fit: cover;
 }
 
-.banner {
-  height: 480px;
-  background-image: url(https://images.unsplash.com/photo-1506846540181-347008948fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /*
-    &Info{
-        margin-left: 95px;
-    }
-    */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
 }
 
-.nav-scroller {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.nav-scroller::-webkit-scrollbar {
-  display: none;
-}
-
-@media (max-width: 767.98px) {
-  .nav-scroller {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+@media (min-width: 992px) {
+  .swiper-container {
+    width: 92%;
   }
 }
 
-.link-secondary {
-  border-bottom: 1px solid transparent;
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: 100%;
+  }
 }
 
-.link-secondary:hover {
-  border-bottom: 1px solid #E31277;
-}
-
-.footer {
-  height: 400px;
-  background-image: url(https://images.unsplash.com/photo-1536768767433-cc552f38def9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.card {
-  word-wrap: normal;
-  background-color: inherit;
-}
-
-.card-pic {
-  width: 350px;
+.swiper-img {
+  display: block;
+  width: 100%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.card-date {
-  width: 50%;
-}
-
-.card-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.liveStreaming {
-  height: 482px;
-  background-image: url(https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fc3890805-73ba-4b83-8d87-2236d201962c%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAJ4ATIV7TEVKIW3RQ%252F20210810%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20210810T163831Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Db41bc21dcc15bc3a716075fcfab54afe6d049063bc6e9ed934baa9a1dbeca225&sign=iozrQlmtqCl2LTNS_ANsHIbLV5y2lqJDOKQ62Oox9fQ);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.liveStreaming-photo {
-  width: 128px;
-  height: 128px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.liveStreaming .card-body-height {
-  height: 482px;
-}
-
-.designInfo {
-  padding-top: 44px;
-  padding-bottom: 44px;
-}
-
-@media (min-width: 768px) {
-  .designInfo {
-    padding-top: 80px;
-    padding-bottom: 52px;
-  }
-}
-
-.date {
-  width: 50%;
-}
-
-@media (min-width: 1200px) {
-  .date {
-    width: 30%;
-  }
-}
-
-.card-img-top {
-  height: 256px;
-  background-image: url(https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.designTicketBox {
-  padding-top: 44px;
-  padding-bottom: 40px;
-}
-
-@media (min-width: 768px) {
-  .designTicketBox {
-    padding-top: 80px;
-  }
-}
-
-.ticketType {
-  border-bottom: 1px solid transparent;
-}
-
-.ticketType:hover {
-  border-bottom: 1px solid #E31277;
-}
-
-@media (min-width: 768px) {
-  .border-md-end {
-    border-right: 1px solid #dee2e6;
-  }
-}
-
-.designDetailBanner {
-  width: 100%;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.designDetailImg {
-  height: 559px;
-}
-
-.text-indent {
-  text-indent: 2rem;
 }
 
 .timeline-section {
@@ -16712,11 +16538,225 @@ p, ol, ul, dl {
   border: 1px solid #E31277;
 }
 
+.card {
+  word-wrap: normal;
+  background-color: inherit;
+}
+
+.card-pic {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-date {
+  width: 50%;
+}
+
+.card-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.numberIcon {
+  width: 20px;
+  height: 20px;
+  top: 35%;
+  left: 65%;
+}
+
+.banner {
+  width: 100%;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1506846540181-347008948fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80);
+}
+
+.nav-scroller {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.nav-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .nav-scroller {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.link-secondary {
+  border-bottom: 1px solid transparent;
+}
+
+.link-secondary:hover {
+  border-bottom: 1px solid #E31277;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1536768767433-cc552f38def9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+
+.liveStreaming {
+  width: 100%;
+  height: 482px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F133fb918-91a9-43b6-a9f3-971ba0190f93%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAJ4ATIV7TEVKIW3RQ%252F20210812%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20210812T151706Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D231bd4e71b37e68f97076a7588c283ccdcd959baf8fe90fb1d8d3ca74d099505&sign=awm7xRoRypzaUXS80aETwXuJFoz_P7SUj7F9xTYjgYg);
+}
+
+.liveStreaming-photo {
+  width: 128px;
+  height: 128px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.liveStreaming .card-body-height {
+  height: 482px;
+}
+
+.designInfo {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+@media (min-width: 768px) {
+  .designInfo {
+    padding-top: 80px;
+    padding-bottom: 52px;
+  }
+}
+
+.designInfo-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.date {
+  width: 50%;
+}
+
+@media (min-width: 1200px) {
+  .date {
+    width: 30%;
+  }
+}
+
+.designTicketBox {
+  padding-top: 44px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .designTicketBox {
+    padding-top: 80px;
+  }
+}
+
+.designTicketBox-img {
+  width: 100%;
+  height: 256px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+}
+
+.ticketType {
+  border-bottom: 1px solid transparent;
+}
+
+.ticketType:hover {
+  border-bottom: 1px solid #E31277;
+}
+
+@media (min-width: 768px) {
+  .border-md-end {
+    border-right: 1px solid #dee2e6;
+  }
+}
+
+.designDetailBanner {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.designDetailImg {
+  width: 100%;
+  height: 559px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-indent {
+  text-indent: 2rem;
+}
+
+.checkoutList {
+  margin-bottom: 89px;
+}
+
+@media (min-width: 992px) {
+  .checkoutList {
+    margin-bottom: 218px;
+  }
+}
+
 .checkoutListImg {
   width: 100%;
   height: 84px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.completeOrder {
+  padding-top: 42px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .completeOrder {
+    padding-top: 102px;
+    padding-bottom: 123px;
+  }
+}
+
+.completeOrderInfo {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .completeOrderInfo {
+    margin-bottom: 96px;
+  }
+}
+
+.checkIcon {
+  font-size: 44px;
 }
 
 /*# sourceMappingURL=all.css.map */
