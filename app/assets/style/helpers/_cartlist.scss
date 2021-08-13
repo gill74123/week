@@ -17,6 +17,9 @@
 }
 .modal-body{
     max-height: 548px;
+    @include media-breakpoint-up(lg){
+        max-height: 720px;
+    }
 }
 .cartList{
     max-width: 500px;

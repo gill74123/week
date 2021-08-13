@@ -1,3 +1,14 @@
+// 固定topNavBar
+.topNavBar{
+    position: sticky;
+    top: 68px;
+    width: 100%;
+    background-color: $white;
+    z-index: 10;
+    @include media-breakpoint-up(md){
+        top: 94px;
+    }
+}
 .nav-scroller{
     justify-content: center;
     flex-wrap: nowrap;
