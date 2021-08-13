@@ -16450,6 +16450,12 @@ p, ol, ul, dl {
   max-height: 548px;
 }
 
+@media (min-width: 992px) {
+  .modal-body {
+    max-height: 720px;
+  }
+}
+
 .cartList {
   max-width: 500px;
 }
@@ -16551,12 +16557,21 @@ p, ol, ul, dl {
 }
 
 .card-date {
-  width: 50%;
+  width: 30%;
 }
 
 .card-icon {
   width: 20px;
   height: 20px;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .numberIcon {
@@ -16573,6 +16588,21 @@ p, ol, ul, dl {
   background-size: cover;
   background-position: center;
   background-image: url(https://images.unsplash.com/photo-1506846540181-347008948fff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1186&q=80);
+}
+
+.topNavBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 68px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .topNavBar {
+    top: 94px;
+  }
 }
 
 .nav-scroller {
