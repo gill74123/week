@@ -243,7 +243,7 @@
     <!-- designDetail-->
     <div>
         <!-- mobile版才會出現 -->
-        <div class="col-md-8 d-md-none mb-8">
+        <div class="col-md-8 d-md-none mb-8" data-aos="fade-up">
             <h3 class="fs-2 fw-bold mb-1">藝饗宴</h3>
             <p class="fs-2 mb-4">​Celebration of Style and Art</p>
             <p class="text-indent fw-light mb-6">
@@ -257,19 +257,19 @@
             </p>
         </div>
 
-        <img class="designDetailBanner mb-6 mb-md-11"
+        <img class="designDetailBanner mb-6 mb-md-11" data-aos="fade-up"
             src="https://images.unsplash.com/photo-1546013848-afcad42624d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80"
             alt="designDetailBanner-1">
     </div>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-up">
             <img class="designDetailImg"
                 src="https://images.unsplash.com/photo-1494660084187-79afc14b7c0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
                 alt="designDetail-1">
         </div>
 
         <!-- pad版才會出現 -->
-        <div class="col-md-8 d-none d-md-block">
+        <div class="col-md-8 d-none d-md-block" data-aos="fade-left">
             <h3 class="fs-2 fw-bold mb-1">藝饗宴</h3>
             <p class="fs-2 mb-4">​Celebration of Style and Art</p>
             <p class="text-indent fw-light mb-6">
@@ -286,7 +286,7 @@
 
     <!-- GuessYouLike -->
     <div class="py-8 py-md-14">
-        <h2 class="fs-5 fw-bold mb-2 mb-md-9">猜你也喜歡...</h2>
+        <h2 class="fs-5 fw-bold mb-2 mb-md-9" data-aos="fade-up">猜你也喜歡...</h2>
 
         <!-- swiper -->
         <div class="swiper-container swiperContent">
@@ -327,8 +327,8 @@
     <!-- footer -->
     <!-- footer -->
 <footer class="footer position-relative">
-    <div class="container">
-        <div class="text-white position-absolute bottom-0 mb-11">
+    <div class="container" >
+        <div class="text-white position-absolute bottom-0 mb-11" data-aos="fade-up">
           <h2 class="fs-3 fs-md-5 fw-blod mb-15 mb-md-4">想收到展覽的最新消息嗎？<br>快訂閱我們！</h2>
           <form class="d-flex rounded">
             <input class="border-0 rounded-start p-4" type="email" placeholder="輸入您的電子信箱">
@@ -360,5 +360,32 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
     <script src="./assets/js/all.js"></script>
+
+    <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 600, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+  </script>
   
   </body>
