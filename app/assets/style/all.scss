@@ -9,8 +9,10 @@
 // mixin
 @import "./mixin/images.scss";
 
+// config
+@import "./config/base";
+
 // utilities
-@import "./utilities/base";
 @import "./utilities/font";
 
 // helpers
