@@ -27,4 +27,8 @@
     &:hover{
         border-bottom: 1px solid #E31277;
     }
+    // current名稱判定，true才會執行
+    &--checked{
+        border-bottom: 1px solid #E31277;
+    }
 }

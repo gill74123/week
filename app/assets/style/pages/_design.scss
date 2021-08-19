@@ -9,10 +9,60 @@
         @include img-cover(100%, 100%)
     }
 }
-
 .date{
     width: 50%;
     @include media-breakpoint-up(xl) {
         width: 30%;
+    }
+}
+
+// designInfo-img-hover效果
+.designInfo-img-hover-box{
+    position: relative; // 讓偽元素有相對應的位置
+    overflow: hidden; // 放大將超出的部分隱藏
+}
+.designInfo-img-hover-scale{
+    // position: relative;
+    img{
+        transition-duration: .4s
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000;
+        opacity: 0;
+        z-index: 10;
+        transition-duration: .3s;
+    }
+    &::after{
+        content: 'see more';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+        opacity: 0;
+        z-index: 10;
+        transition-delay: .15s;
+        transition-duration: .3s;
+    }
+
+    &:hover{
+        img{
+            transform:  scale(1.1);
+        }
+        &::before{
+            opacity: 0.2;
+        }
+        &::after{
+            opacity: 1;
+        }
     }
 }

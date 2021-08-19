@@ -1,7 +1,7 @@
 // liveStreaming
 .liveStreaming{
   @include bg-img(100%, 482px, center){
-    background-image: url(https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F6c04c5b0-64c7-43ab-b3ec-21bf0d9a517d%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAJ4ATIV7TEVKIW3RQ%252F20210816%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20210816T034036Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Df4d755fce96a0c4069c5590ed41cf719417e4a89c3fb762890264538e84b0321&sign=Lltd8I0XOiktJuHQ3ugyUn2Ew-N4jvqH_fGPjF-NBEw);
+    background-image: url(../images/people2.png);
 }
   &-photo{
     @include img-cover(128px, 128px)

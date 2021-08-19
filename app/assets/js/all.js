@@ -30,4 +30,9 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+
+
+  AOS.init({
+    once: true,
+  });
 });

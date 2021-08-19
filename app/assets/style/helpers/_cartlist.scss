@@ -12,18 +12,34 @@
     }
 }
 .modal.rightActive .modal-content {
-    // height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .modal-body{
     max-height: 548px;
-    @include media-breakpoint-up(lg){
-        max-height: 720px;
-    }
 }
 .cartList{
     max-width: 500px;
     img{
         @include img-cover(120px, 120px)
     }  
+}
+
+// 右側捲軸
+.scrollbar {
+    // 捲軸本身，可以設定寬度
+    &::-webkit-scrollbar {
+      width: 2px;
+      border-radius: 4px;
+    }
+  
+    // 捲軸可以拉的部分
+    &::-webkit-scrollbar-thumb {
+        background-color: #E31277;
+        border: 1px solid #E31277;
+    }
+  
+    // 捲軸空的地方，也可以說背景的顏色
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 3px 9px $light;
+    } 
 }
