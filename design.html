@@ -61,8 +61,8 @@
         <h5 class="modal-title fs-5 fw-bold mb-4" id="exampleModalLabel">Cart List</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body p-0">
-        <ul class="cartList list-unstyled text-black">
+      <div class="modal-body scrollbar">
+        <ul class="cartList text-black ">
           <li class="bg-white rounded-2 mb-4">
             <span class="material-icons">close</span>
             <div class="d-flex justify-content-between pb-6 px-6 pb-md-9 px-md-11">
@@ -162,38 +162,36 @@
   
     <!-- topNavBar -->
     <!-- topNavBar -->
-<nav class="topNavBar border border-secondary py-5">
+<nav class="topNavBar border border-secondary ">
   <div class="container">
-    <ul class="nav-scroller d-flex list-unstyled align-items-center">
-      <li><a class="link-secondary px-4" href="#">音樂</a></li>
-      <li><a class="link-secondary px-4" href="#">戲劇</a></li>
-      <li><a class="link-secondary px-4" href="design.html">設計</a></li>
-      <li><a class="link-secondary px-4" href="#">藝術</a></li>
-      <li><a class="link-secondary px-4" href="#">美食</a></li>
-      <li><a class="link-secondary px-4" href="#">旅遊</a></li>
-      <li><a class="link-secondary px-4" href="#">電影</a></li>
-      <li><a class="link-secondary px-4" href="#">親子</a></li>
-      <li><a class="link-secondary px-4" href="#">期間限定</a></li>
+    <ul class="nav-scroller d-flex list-unstyled align-items-center py-5">
+      <li><a class="link-secondary p-4" href="#">音樂</a></li>
+      <li><a class="link-secondary p-4" href="#">戲劇</a></li>
+      <li><a class="link-secondary p-4 link-secondary--checked " href="design.html">設計</a></li>
+      <li><a class="link-secondary p-4" href="#">藝術</a></li>
+      <li><a class="link-secondary p-4" href="#">美食</a></li>
+      <li><a class="link-secondary p-4" href="#">旅遊</a></li>
+      <li><a class="link-secondary p-4" href="#">電影</a></li>
+      <li><a class="link-secondary p-4" href="#">親子</a></li>
+      <li><a class="link-secondary p-4" href="#">期間限定</a></li>
     </ul>
   </div>
 </nav>
-
-<!-- <ul class="nav-scroller d-flex list-unstyled justify-content-center align-items-center"></ul> -->
   
   
     <!-- contents -->
     
 <!-- design exhibition -->
 <div class="bg-primary">
-    <div class="container" data-aos="fade-left">
+    <div class="container" data-aos="fade-left" data-aos-duration="1000">
         <div class="row text-white designInfo">
             <!-- pad block -->
             <div class="col-md-4 d-none d-md-block">
                 <h2 class="fs-4 fs-md-8 fw-bold mb-2 mb-md-9">2020 台味設計展</h2>
                 <p>一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
             </div>
-            <div class="col-md-5 mb-6 mb-md-0">
-                <a href="designInfo.html">
+            <div class="col-md-5 mb-6 mb-md-0 test">
+                <a href="designInfo.html" class="designInfo-img-hover-scale">
                     <img class="designInfo-img"
                         src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                         alt="exhibition-1">
@@ -212,7 +210,7 @@
 </div>
 
 <div class="bg-white">
-    <div class="container" data-aos="fade-right">
+    <div class="container" data-aos="fade-right" data-aos-duration="1000">
         <div class="row designInfo">
             <!-- pad block -->
             <div class="offset-md-2 col-md-4 d-none d-md-block">
@@ -221,9 +219,11 @@
                     這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。</p>
             </div>
             <div class="col-md-5 mb-6 mb-md-0">
+                <a href="#" class="designInfo-img-hover-scale">
                 <img class="designInfo-img"
                     src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
                     alt="exhibition-2">
+                </a>
             </div>
             <div class="col-md-1 d-flex align-items-end mb-2 mb-md-0">
                 <p class="date fw-medium fw-md-bold ">01 JUN | 31 OCT</p>
@@ -239,7 +239,7 @@
 </div>
 
 <div class="bg-primary">
-    <div class="container" data-aos="fade-left">
+    <div class="container" data-aos="fade-left" data-aos-duration="1000">
         <div class="row text-white designInfo">
             <!-- pad block -->
             <div class="col-md-4 d-none d-md-block">
@@ -267,10 +267,10 @@
 
 <!-- GuessYouLike -->
 <div class="container py-8 py-md-14">
-    <h2 class="fs-5 fw-bold mb-2 mb-md-9" data-aos="fade-up">猜你也喜歡...</h2>
+    <h2 class="fs-5 fw-bold mb-2 mb-md-9" data-aos="fade-right">猜你也喜歡...</h2>
 
     <!-- swiper -->
-    <div class="swiper-container swiperContent">
+    <div class="swiper-container swiperContent" data-aos="fade-left" data-aos-duration="1000">
         <div class="swiper-wrapper mb-12">
             <div class="swiper-slide">
                 <img class="swiper-img mb-1"
@@ -307,7 +307,7 @@
     <!-- footer -->
 <footer class="footer position-relative">
     <div class="container" >
-        <div class="text-white position-absolute bottom-0 mb-11" data-aos="fade-up">
+        <div class="text-white position-absolute bottom-0 mb-11" data-aos="fade-up" data-aos-duration="1000">
           <h2 class="fs-3 fs-md-5 fw-blod mb-15 mb-md-4">想收到展覽的最新消息嗎？<br>快訂閱我們！</h2>
           <form class="d-flex rounded">
             <input class="border-0 rounded-start p-4" type="email" placeholder="輸入您的電子信箱">
@@ -342,29 +342,5 @@
 
     <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: 'aos-init', // class applied after initialization
-      animatedClassName: 'aos-animate', // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 600, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-    });
-  </script>
-  
-  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+</body>

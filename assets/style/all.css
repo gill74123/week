@@ -16443,6 +16443,7 @@ p, ol, ul, dl {
 }
 
 .modal.rightActive .modal-content {
+  height: 100%;
   overflow-y: auto;
 }
 
@@ -16465,6 +16466,21 @@ p, ol, ul, dl {
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #E31277;
+  border: 1px solid #E31277;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 3px 9px #f8f9fa;
+          box-shadow: inset 0 3px 9px #f8f9fa;
 }
 
 .swiper-container {
@@ -16636,6 +16652,10 @@ header {
   border-bottom: 1px solid #E31277;
 }
 
+.link-secondary--checked {
+  border-bottom: 1px solid #E31277;
+}
+
 .footer {
   width: 100%;
   height: 400px;
@@ -16651,7 +16671,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2F6c04c5b0-64c7-43ab-b3ec-21bf0d9a517d%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAJ4ATIV7TEVKIW3RQ%252F20210816%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20210816T034036Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3Df4d755fce96a0c4069c5590ed41cf719417e4a89c3fb762890264538e84b0321&sign=Lltd8I0XOiktJuHQ3ugyUn2Ew-N4jvqH_fGPjF-NBEw);
+  background-image: url(../images/people2.png);
 }
 
 .liveStreaming-photo {
@@ -16692,6 +16712,49 @@ header {
   .date {
     width: 30%;
   }
+}
+
+.designInfo-img-hover-scale {
+  position: relative;
+}
+
+.designInfo-img-hover-scale::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.designInfo-img-hover-scale::after {
+  content: 'see more';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.designInfo-img-hover-scale:hover::before {
+  opacity: 0.3;
+}
+
+.designInfo-img-hover-scale:hover::after {
+  opacity: 1;
 }
 
 .designTicketBox {

@@ -27,5 +27,6 @@ $(document).ready(function () {
       clickable: true
     }
   });
+  AOS.init();
 });
 //# sourceMappingURL=all.js.map

@@ -61,8 +61,8 @@
         <h5 class="modal-title fs-5 fw-bold mb-4" id="exampleModalLabel">Cart List</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body p-0">
-        <ul class="cartList list-unstyled text-black">
+      <div class="modal-body scrollbar">
+        <ul class="cartList text-black ">
           <li class="bg-white rounded-2 mb-4">
             <span class="material-icons">close</span>
             <div class="d-flex justify-content-between pb-6 px-6 pb-md-9 px-md-11">
@@ -162,23 +162,21 @@
   
     <!-- topNavBar -->
     <!-- topNavBar -->
-<nav class="topNavBar border border-secondary py-5">
+<nav class="topNavBar border border-secondary ">
   <div class="container">
-    <ul class="nav-scroller d-flex list-unstyled align-items-center">
-      <li><a class="link-secondary px-4" href="#">音樂</a></li>
-      <li><a class="link-secondary px-4" href="#">戲劇</a></li>
-      <li><a class="link-secondary px-4" href="design.html">設計</a></li>
-      <li><a class="link-secondary px-4" href="#">藝術</a></li>
-      <li><a class="link-secondary px-4" href="#">美食</a></li>
-      <li><a class="link-secondary px-4" href="#">旅遊</a></li>
-      <li><a class="link-secondary px-4" href="#">電影</a></li>
-      <li><a class="link-secondary px-4" href="#">親子</a></li>
-      <li><a class="link-secondary px-4" href="#">期間限定</a></li>
+    <ul class="nav-scroller d-flex list-unstyled align-items-center py-5">
+      <li><a class="link-secondary p-4" href="#">音樂</a></li>
+      <li><a class="link-secondary p-4" href="#">戲劇</a></li>
+      <li><a class="link-secondary p-4 link-secondary--checked " href="design.html">設計</a></li>
+      <li><a class="link-secondary p-4" href="#">藝術</a></li>
+      <li><a class="link-secondary p-4" href="#">美食</a></li>
+      <li><a class="link-secondary p-4" href="#">旅遊</a></li>
+      <li><a class="link-secondary p-4" href="#">電影</a></li>
+      <li><a class="link-secondary p-4" href="#">親子</a></li>
+      <li><a class="link-secondary p-4" href="#">期間限定</a></li>
     </ul>
   </div>
 </nav>
-
-<!-- <ul class="nav-scroller d-flex list-unstyled justify-content-center align-items-center"></ul> -->
   
   
     <!-- contents -->
@@ -187,14 +185,14 @@
     <!-- designTicketBox -->
     <div class="row designTicketBox">
         <div class="col-lg-6 mb-8 mb-lg-0">
-            <div class="designTicketBox-img mb-2">
+            <div class="designTicketBox-img mb-2" data-aos="flip-left">
                 <div class="row g-0 h-100 align-items-center">
                     <div class="offset-md-10 col-md-1">
-                        <p class="d-none d-md-block fs-2 fw-bold text-white w-50">01 JUN | 31 OCT</p>
+                        <p class="d-none d-md-block fs-2 fw-bold text-white w-50" data-aos="fade-up" data-aos-delay="300">01 JUN | 31 OCT</p>
                     </div>
                 </div>
             </div>
-            <div class="card-body p-0">
+            <div class="card-body p-0" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-out-back">
                 <div class="card-title d-flex justify-content-between align-items-center mb-1">
                     <div class="d-flex align-items-center">
                         <h3 class="fs-2 fw-bold me-1">2020 台味設計展</h3>
@@ -210,14 +208,14 @@
             <div class="row">
                 <div
                     class="col-md-6 border-md-end border-secondary d-flex flex-column align-items-center py-10 py-lg-14 mb-lg-16">
-                    <div class="d-flex justify-content-center align-items-center mb-9">
+                    <div class="d-flex justify-content-center align-items-center mb-9" data-aos="zoom-in" data-aos-delay="300">
                         <a href="#" class="text-black border-0 fs-6 py-0 px-8">–</a>
                         <p class="fs-6 fw-bold">01</p>
                         <a href="#" class="text-black border-0 fs-6 py-0 px-8">+</a>
                     </div>
-                    <p class="fw-light">張</p>
+                    <p class="fw-light" data-aos="zoom-in" data-aos-delay="300">張</p>
                 </div>
-                <div class="col-md-6 d-flex flex-column align-items-center py-10 py-lg-14 mb-lg-16">
+                <div class="col-md-6 d-flex flex-column align-items-center py-10 py-lg-14 mb-lg-16" data-aos="zoom-in" data-aos-delay="300">
                     <p class="fs-6 fw-bold mb-9">NT$350</p>
                     <p class="fw-light mb-2">票種</p>
                     <ul class="list-unstyled d-flex">
@@ -227,7 +225,7 @@
                     </ul>
                 </div>
                 <div class="col-12">
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-out-back">
                         <div class="col-6">
                             <button class="btn btn-outline-primary py-3 w-100">收藏展覽</button>
                         </div>
@@ -257,7 +255,7 @@
             </p>
         </div>
 
-        <img class="designDetailBanner mb-6 mb-md-11" data-aos="fade-up"
+        <img class="designDetailBanner mb-6 mb-md-11" data-aos="flip-left" data-aos-delay="500"
             src="https://images.unsplash.com/photo-1546013848-afcad42624d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80"
             alt="designDetailBanner-1">
     </div>
@@ -286,10 +284,10 @@
 
     <!-- GuessYouLike -->
     <div class="py-8 py-md-14">
-        <h2 class="fs-5 fw-bold mb-2 mb-md-9" data-aos="fade-up">猜你也喜歡...</h2>
+        <h2 class="fs-5 fw-bold mb-2 mb-md-9" data-aos="fade-left">猜你也喜歡...</h2>
 
         <!-- swiper -->
-        <div class="swiper-container swiperContent">
+        <div class="swiper-container swiperContent" data-aos="fade-left" data-aos-duration="1000">
             <div class="swiper-wrapper mb-12">
                 <div class="swiper-slide">
                     <img class="swiper-img mb-1"
@@ -328,7 +326,7 @@
     <!-- footer -->
 <footer class="footer position-relative">
     <div class="container" >
-        <div class="text-white position-absolute bottom-0 mb-11" data-aos="fade-up">
+        <div class="text-white position-absolute bottom-0 mb-11" data-aos="fade-up" data-aos-duration="1000">
           <h2 class="fs-3 fs-md-5 fw-blod mb-15 mb-md-4">想收到展覽的最新消息嗎？<br>快訂閱我們！</h2>
           <form class="d-flex rounded">
             <input class="border-0 rounded-start p-4" type="email" placeholder="輸入您的電子信箱">
@@ -363,29 +361,5 @@
 
     <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: 'aos-init', // class applied after initialization
-      animatedClassName: 'aos-animate', // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 600, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-    });
-  </script>
-  
-  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+</body>
