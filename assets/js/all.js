@@ -27,6 +27,8 @@ $(document).ready(function () {
       clickable: true
     }
   });
-  AOS.init();
+  AOS.init({
+    once: true
+  });
 });
 //# sourceMappingURL=all.js.map
