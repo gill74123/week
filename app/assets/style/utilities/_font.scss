@@ -1,38 +1,10 @@
-
-// font size
-// 小於等於767.98px會觸發
-@include media-breakpoint-up(md){
-    .fs-md-1{
-        font-size: 1rem !important; // 16px
-    }
-    .fs-md-2{
-        font-size: 1.25rem !important; // 20px
-    }
-    .fs-md-3{
-        font-size: 1.5rem !important; // 24px
-    }
-    .fs-md-4{
-        font-size: 1.75rem !important; // 28px
-    }
-    .fs-md-5{
-        font-size: 2rem !important; // 32px
-    }
-    .fs-md-6{
-        font-size: 2.5rem !important; // 40px
-    }
-    .fs-md-7{
-        font-size: 1.375rem !important; // 22px
-    }
-    .fs-md-8{
-        font-size: 2.25rem !important; // 36px
-    }
-    .fs-md-9{
-        font-size: 0.875rem !important; // 14px
-    }
-}
-
 // font weight
 .fw-medium{
     font-weight: 500;
+}
+
+// text-indent 自首堆擠，若有推擠多行也需設計單位
+.text-indent{
+    text-indent: 2rem;
 }
 

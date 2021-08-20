@@ -4,6 +4,7 @@
 // BS5、客製variables
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // mixin
@@ -15,11 +16,13 @@
 // utilities
 @import "./utilities/font";
 
+// components 元件
+@import "./components/cartlist";
+@import "./components/timeline";
+@import "./components/card";
+
 // helpers
-@import "./helpers/cartlist";
 @import "./helpers/swiper";
-@import "./helpers/timeline";
-@import "./helpers/card";
 
 // layout
 @import "./layout/header";
