@@ -10214,6 +10214,10 @@ fieldset:disabled .btn {
   font-weight: 400 !important;
 }
 
+.fw-medium {
+  font-weight: 500 !important;
+}
+
 .fw-bold {
   font-weight: 700 !important;
 }
@@ -16580,37 +16584,23 @@ p, ol, ul, dl {
   list-style: none;
 }
 
-.fw-medium {
-  font-weight: 500;
-}
-
 .text-indent {
   text-indent: 2rem;
 }
 
-.modal.rightActive .modal-dialog {
-  position: fixed;
+.offcanvas-end {
   top: 69px;
   right: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  -webkit-transform: translate3d(0%, 0, 0);
-          transform: translate3d(0%, 0, 0);
+  width: 540px;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 @media (min-width: 768px) {
-  .modal.rightActive .modal-dialog {
+  .offcanvas-end {
     top: 94px;
   }
-}
-
-.modal.rightActive .modal-content {
-  overflow-y: scroll;
-}
-
-.modal-body {
-  max-height: 548px;
 }
 
 .cartList {
@@ -16624,8 +16614,12 @@ p, ol, ul, dl {
      object-fit: cover;
 }
 
+.scrollbar {
+  margin-right: 10px;
+}
+
 .scrollbar::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
   border-radius: 4px;
 }
 
